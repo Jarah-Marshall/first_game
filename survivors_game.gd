@@ -7,9 +7,16 @@ func spawn_mob():
 	new_mob.global_position = %PathFollow2D.global_position
 	add_child(new_mob)
 	
+func spawn_tree():
+	var new_tree = preload("res://pine_tree.tscn").instantiate()
+	%TreeSpawnFollow.progress_ratio = randf()
+	new_tree.global_position = %TreeSpawnFollow.global_position
+	add_child(new_tree)
+	
 	
 func _on_timer_timeout():
 	spawn_mob()
+	spawn_tree()
 
 
 func _on_player_health_depleted():
