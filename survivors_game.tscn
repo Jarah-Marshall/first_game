@@ -1,0 +1,114 @@
+[gd_scene format=3 uid="uid://swcb8q32cvqi"]
+
+[ext_resource type="Script" uid="uid://c1bfau31nfqio" path="res://survivors_game.gd" id="1_qqaft"]
+[ext_resource type="PackedScene" uid="uid://c1sx7bic4uhdj" path="res://player.tscn" id="1_y3pti"]
+[ext_resource type="PackedScene" uid="uid://y38gte5o0xf8" path="res://mob.tscn" id="2_l26od"]
+[ext_resource type="PackedScene" uid="uid://dq3r015sr1uql" path="res://pine_tree.tscn" id="2_y3pti"]
+
+[sub_resource type="Curve2D" id="Curve2D_7jj1j"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -110, -77, 0, 0, 0, 0, 2044, -73, 0, 0, 0, 0, 2046, 1170, 0, 0, 0, 0, -112, 1171, 0, 0, 0, 0, -110, -77)
+}
+point_count = 5
+
+[node name="Game" type="Node2D" unique_id=2132724869]
+y_sort_enabled = true
+script = ExtResource("1_qqaft")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1028874442]
+layer = -30
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=2036787593]
+offset_left = -5.0
+offset_top = 1.0
+offset_right = 1925.0
+offset_bottom = 1085.0
+
+[node name="Player" parent="." unique_id=1438756895 instance=ExtResource("1_y3pti")]
+position = Vector2(955, 535)
+
+[node name="Path2D" type="Path2D" parent="Player" unique_id=1043875460]
+position = Vector2(-955, -535)
+curve = SubResource("Curve2D_7jj1j")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Player/Path2D" unique_id=76241777]
+unique_name_in_owner = true
+position = Vector2(-110, -77)
+rotation = 0.0018570081
+
+[node name="Mob" parent="." unique_id=1574020910 instance=ExtResource("2_l26od")]
+position = Vector2(591, 344)
+
+[node name="Mob2" parent="." unique_id=1218192418 instance=ExtResource("2_l26od")]
+position = Vector2(1386, 392)
+
+[node name="Mob3" parent="." unique_id=225788758 instance=ExtResource("2_l26od")]
+position = Vector2(444, 824)
+
+[node name="Mob4" parent="." unique_id=422558429 instance=ExtResource("2_l26od")]
+position = Vector2(1356, 806)
+
+[node name="PineTree" parent="." unique_id=253760446 instance=ExtResource("2_y3pti")]
+position = Vector2(335, 251)
+
+[node name="PineTree2" parent="." unique_id=861517770 instance=ExtResource("2_y3pti")]
+position = Vector2(204, 750)
+
+[node name="PineTree3" parent="." unique_id=326221400 instance=ExtResource("2_y3pti")]
+position = Vector2(430, 540)
+
+[node name="PineTree4" parent="." unique_id=945912514 instance=ExtResource("2_y3pti")]
+position = Vector2(125, 398)
+
+[node name="PineTree5" parent="." unique_id=117227146 instance=ExtResource("2_y3pti")]
+position = Vector2(814, 109)
+
+[node name="PineTree6" parent="." unique_id=734557148 instance=ExtResource("2_y3pti")]
+position = Vector2(1507, 225)
+
+[node name="PineTree7" parent="." unique_id=1278471139 instance=ExtResource("2_y3pti")]
+position = Vector2(1181, 267)
+
+[node name="PineTree8" parent="." unique_id=986142011 instance=ExtResource("2_y3pti")]
+position = Vector2(766, 787)
+
+[node name="PineTree9" parent="." unique_id=804553811 instance=ExtResource("2_y3pti")]
+position = Vector2(1118, 677)
+
+[node name="PineTree10" parent="." unique_id=2056733498 instance=ExtResource("2_y3pti")]
+position = Vector2(1528, 698)
+
+[node name="Timer" type="Timer" parent="." unique_id=881508527]
+wait_time = 0.3
+autostart = true
+
+[node name="GameOver" type="CanvasLayer" parent="." unique_id=1793312400]
+unique_name_in_owner = true
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="GameOver" unique_id=1988435990]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.50980395)
+
+[node name="Label" type="Label" parent="GameOver/ColorRect" unique_id=1506813797]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -46.0
+offset_top = -11.5
+offset_right = 46.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 65
+text = "GAME OVER"
+
+[connection signal="health_depleted" from="Player" to="." method="_on_player_health_depleted"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
