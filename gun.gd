@@ -1,5 +1,7 @@
 extends Area2D
 
+@onready var bullet_sound = $BulletSound
+
 func _physics_process(delta):
 	var enemies_in_range = get_overlapping_bodies()
 	if enemies_in_range.size() > 0:
@@ -28,6 +30,8 @@ func shoot_missle():
 
 func _on_timer_timeout():
 	shoot()
+	bullet_sound.play()
 
 func _missle_on_timer_timeout():
 	shoot_missle()
+	bullet_sound.play()

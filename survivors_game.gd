@@ -1,5 +1,6 @@
 extends Node2D
 
+@onready var game_over = $GameOverSound
 
 func spawn_mob():
 	var new_mob = preload("res://mob.tscn").instantiate()
@@ -22,3 +23,5 @@ func _on_timer_timeout():
 func _on_player_health_depleted():
 	%GameOver.visible = true
 	get_tree().paused = true
+	game_over.play()
+	

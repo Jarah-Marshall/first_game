@@ -3,6 +3,7 @@ extends CharacterBody2D
 var health = 3
 
 @onready var player = get_node("/root/Game/Player")
+@onready var mob_damage = $MobDamage
 
 func _ready():
 	%Slime.play_walk()
@@ -14,9 +15,11 @@ func _physics_process(delta):
 	
 func take_damage():
 	health -= 1
+	%MobHealthbar.value = health
 	%Slime.play_hurt()
+	mob_damage.play()
 	
-	if health == 0:
+	if health <= 0:
 		queue_free()
 		
 		const SMOKE_SCENE = preload("res://smoke_explosion/smoke_explosion.tscn")
@@ -27,9 +30,11 @@ func take_damage():
 		
 func take_missle_damage():
 	health -= 3
+	%MobHealthbar.value = health
 	%Slime.play_hurt()
+	mob_damage.play()
 	
-	if health == 0:
+	if health <= 0:
 		queue_free()
 		
 	const SMOKE_SCENE = preload("res://smoke_explosion/smoke_explosion.tscn")

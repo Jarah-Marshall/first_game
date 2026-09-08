@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 signal health_depleted
 
+@onready var player_damage = $PlayerDamage
 var health = 100.0
 
 func _physics_process(delta):
@@ -21,5 +22,8 @@ func _physics_process(delta):
 	if overlapping_mobs.size() > 0:
 		health -= DAMAGE_RATE * overlapping_mobs.size() * delta
 		%ProgressBar.value = health
+		player_damage.play()
+		
 		if health <= 0.0:
 			health_depleted.emit()
+			

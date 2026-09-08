@@ -2,9 +2,23 @@
 
 [ext_resource type="Script" uid="uid://d07l5xwryn2cx" path="res://mob.gd" id="1_nokgg"]
 [ext_resource type="PackedScene" uid="uid://ogik4s70pgwl" path="res://characters/slime/slime.tscn" id="2_ubaqv"]
+[ext_resource type="AudioStream" uid="uid://b8cjhu83muxs3" path="res://Damage.wav" id="3_ubaqv"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_tx3ma"]
 radius = 52.009613
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nokgg"]
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ubaqv"]
+bg_color = Color(0.39215687, 0.9607843, 0, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
 
 [node name="Mob" type="CharacterBody2D" unique_id=1574020910]
 collision_layer = 2
@@ -17,3 +31,18 @@ unique_name_in_owner = true
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1380190488]
 position = Vector2(0, -30)
 shape = SubResource("CircleShape2D_tx3ma")
+
+[node name="MobHealthbar" type="ProgressBar" parent="." unique_id=1003508242]
+unique_name_in_owner = true
+offset_left = -72.0
+offset_top = -125.0
+offset_right = 73.0
+offset_bottom = -98.0
+theme_override_styles/background = SubResource("StyleBoxFlat_nokgg")
+theme_override_styles/fill = SubResource("StyleBoxFlat_ubaqv")
+max_value = 3.0
+value = 3.0
+show_percentage = false
+
+[node name="MobDamage" type="AudioStreamPlayer" parent="." unique_id=1118639043]
+stream = ExtResource("3_ubaqv")

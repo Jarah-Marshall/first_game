@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://c1sx7bic4uhdj" path="res://player.tscn" id="1_y3pti"]
 [ext_resource type="PackedScene" uid="uid://y38gte5o0xf8" path="res://mob.tscn" id="2_l26od"]
 [ext_resource type="PackedScene" uid="uid://dq3r015sr1uql" path="res://pine_tree.tscn" id="2_y3pti"]
+[ext_resource type="AudioStream" uid="uid://c3cbjg04bqums" path="res://Fail.wav" id="5_7jj1j"]
 
 [sub_resource type="Curve2D" id="Curve2D_qqaft"]
 _data = {
@@ -125,6 +126,9 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 65
 text = "GAME OVER"
+
+[node name="GameOverSound" type="AudioStreamPlayer" parent="." unique_id=47286440]
+stream = ExtResource("5_7jj1j")
 
 [connection signal="health_depleted" from="Player" to="." method="_on_player_health_depleted"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
