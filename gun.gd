@@ -8,12 +8,26 @@ func _physics_process(delta):
 
 func shoot():
 	const BULLET = preload("res://bullet.tscn")
+	
 	var new_bullet = BULLET.instantiate()
+	
 	new_bullet.global_position = %ShootingPoint.global_position
 	new_bullet.global_rotation = %ShootingPoint.global_rotation
 	%ShootingPoint.add_child(new_bullet)
+
+func shoot_missle():
+	const MISSLE = preload("res://missle.tscn")
 	
+	var new_missle = MISSLE.instantiate()
+	
+	new_missle.global_position = %MissleSP.global_position
+	new_missle.global_rotation = %MissleSP.global_rotation
+	
+	%MissleSP.add_child(new_missle)
 
 
 func _on_timer_timeout():
 	shoot()
+
+func _missle_on_timer_timeout():
+	shoot_missle()

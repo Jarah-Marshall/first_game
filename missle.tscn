@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://cghf3vygyvv2q"]
+
+[ext_resource type="Script" uid="uid://k0bvfd7oncki" path="res://missle.gd" id="1_80cqr"]
+[ext_resource type="Texture2D" uid="uid://dolhmqjpblfpv" path="res://pistol/muzzle_flash/muzzle_flash.png" id="1_qpfid"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_tx3ma"]
+radius = 31.016125
+
+[node name="Missle" type="Area2D" unique_id=2140616886]
+top_level = true
+collision_layer = 0
+collision_mask = 3
+script = ExtResource("1_80cqr")
+
+[node name="MuzzleFlash" type="Sprite2D" parent="." unique_id=1242895216]
+position = Vector2(-11.000001, 0)
+rotation = 3.1375213
+scale = Vector2(2.524137, 2.1217725)
+texture = ExtResource("1_qpfid")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=451787494]
+top_level = true
+position = Vector2(0, -2)
+rotation = -3.140601
+shape = SubResource("CircleShape2D_tx3ma")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

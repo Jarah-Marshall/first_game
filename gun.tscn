@@ -26,8 +26,17 @@ texture = ExtResource("1_vk1bi")
 unique_name_in_owner = true
 position = Vector2(25, -11)
 
+[node name="MissleSP" type="Marker2D" parent="WeaponPivot/Pistol" unique_id=1352200628]
+unique_name_in_owner = true
+position = Vector2(24.963219, -11.08324)
+
 [node name="Timer" type="Timer" parent="." unique_id=598793103]
 wait_time = 0.3
 autostart = true
 
+[node name="Timer2" type="Timer" parent="." unique_id=436798144]
+wait_time = 1.5
+autostart = true
+
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="Timer2" to="." method="_missle_on_timer_timeout"]
