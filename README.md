@@ -3,6 +3,10 @@ Resources:
 	
 	Audio Tutorial video: https://www.youtube.com/watch?v=N3p-7iJWRBY
 	
+	Assets Used:
+		GDQuest Game Assets: https://www.gdquest.com/library/first_2d_game_godot4_vampire_survivor/
+		Godot Royalty Free Sound Effects: https://store.godotengine.org/asset/ovani-sound/sound-fx-starter-pack-vol/
+	
 	Tutorial took me roughly 2 hours and 30 minutes to complete
 	
 	Change Number One: Create another Path2D and PathFollow2D scene to spawn trees 
