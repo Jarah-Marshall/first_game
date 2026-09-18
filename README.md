@@ -23,3 +23,11 @@ Resources:
 	a missle. I just changed the if statement to check whether or not the health bar went on or
 	below zero. This change took me about an hour and a half as I was having trouble linking the 
 	sound to the actual scene, a youtube tutorial helped me out however.
+	
+	Homework 3 - Loop Implementation: Added a wave system, once player defeats X amount of slimes
+	game progresses to the next wave. There's still some bugs surrounding how the waves increment
+	but it is functional. Also implemented a leveling system, each time the player defeats X amount
+	of slimes, they level up; gaining health and damage. Lastly, I have the slimes health and damage
+	increasing per round and a boss spawning every 5 rounds, the boss does more damage and starts at 50
+	health with a tacked on wave * 3 additional health. Tweaks need to be made to the wave system and
+	boss system as it has some odd bugs, I will keep working at it
