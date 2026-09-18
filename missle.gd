@@ -17,6 +17,7 @@ func _physics_process(delta):
 
 
 func _on_body_entered(body):
-	queue_free()
 	if body.has_method("take_missle_damage"):
-		body.take_missle_damage()
+		var player = get_node("/root/Game/Player")
+		body.take_missle_damage(3 + player.damage)
+	queue_free()

@@ -130,5 +130,34 @@ text = "GAME OVER"
 [node name="GameOverSound" type="AudioStreamPlayer" parent="." unique_id=47286440]
 stream = ExtResource("5_7jj1j")
 
+[node name="CurrentWave" type="CanvasLayer" parent="." unique_id=373553682]
+unique_name_in_owner = true
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="CurrentWave" unique_id=1197288937]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.50980395)
+
+[node name="WaveLabel" type="Label" parent="CurrentWave/ColorRect" unique_id=1674318212]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -110.0
+offset_top = -49.0
+offset_right = 123.0
+offset_bottom = 55.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 65
+text = "Wave 1 Begin!"
+
 [connection signal="health_depleted" from="Player" to="." method="_on_player_health_depleted"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
