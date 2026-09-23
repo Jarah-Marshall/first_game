@@ -56,12 +56,12 @@ func spawn_boss_slime():
 	mobs = 1
 	
 	
-func spawn_tree():
-	var new_tree = preload("res://pine_tree.tscn").instantiate()
-	%TreeSpawnFollow.progress_ratio = randf()
-	new_tree.global_position = %TreeSpawnFollow.global_position
-	add_child(new_tree)
-	
+#func spawn_tree():
+	#var new_tree = preload("res://pine_tree.tscn").instantiate()
+	#%TreeSpawnFollow.progress_ratio = randf()
+	#new_tree.global_position = %TreeSpawnFollow.global_position
+	#add_child(new_tree)
+	#
 	
 func _on_timer_timeout():
 	if(number_of_mobs > 0):
@@ -70,7 +70,7 @@ func _on_timer_timeout():
 	else:
 		spawn_timer.stop()
 		
-	spawn_tree()
+	#spawn_tree()
 	
 func check_wave_status():
 	mobs -= 1

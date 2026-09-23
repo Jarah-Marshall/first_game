@@ -2,15 +2,181 @@
 
 [ext_resource type="Script" uid="uid://c1bfau31nfqio" path="res://survivors_game.gd" id="1_qqaft"]
 [ext_resource type="PackedScene" uid="uid://c1sx7bic4uhdj" path="res://player.tscn" id="1_y3pti"]
-[ext_resource type="PackedScene" uid="uid://y38gte5o0xf8" path="res://mob.tscn" id="2_l26od"]
-[ext_resource type="PackedScene" uid="uid://dq3r015sr1uql" path="res://pine_tree.tscn" id="2_y3pti"]
+[ext_resource type="Texture2D" uid="uid://nkoevredhy8o" path="res://addons/DesertTilemap.png" id="2_7jj1j"]
 [ext_resource type="AudioStream" uid="uid://c3cbjg04bqums" path="res://Fail.wav" id="5_7jj1j"]
 
-[sub_resource type="Curve2D" id="Curve2D_qqaft"]
-_data = {
-"points": PackedVector2Array(0, 0, 0, 0, 2140, 1280, 0, 0, 0, 0, 2134, 875, 0, 0, 0, 0, 2132, -217, 0, 0, 0, 0, -208, -220, 0, 0, 0, 0, -206, 1277, 0, 0, 0, 0, 1582, 1275, 0, 0, 0, 0, 2140, 1281)
-}
-point_count = 7
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_edxvn"]
+texture = ExtResource("2_7jj1j")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+7:0/0 = 0
+10:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+10:1/0 = 0
+11:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+7:2/0 = 0
+10:2/0 = 0
+12:2/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+8:3/0 = 0
+9:3/0 = 0
+10:3/0 = 0
+11:3/0 = 0
+12:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+8:4/0 = 0
+9:4/0 = 0
+10:4/0 = 0
+11:4/0 = 0
+12:4/0 = 0
+13:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+8:5/0 = 0
+9:5/0 = 0
+10:5/0 = 0
+11:5/0 = 0
+12:5/0 = 0
+13:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+8:6/0 = 0
+9:6/0 = 0
+10:6/0 = 0
+11:6/0 = 0
+12:6/0 = 0
+13:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+6:7/0 = 0
+7:7/0 = 0
+8:7/0 = 0
+9:7/0 = 0
+10:7/0 = 0
+11:7/0 = 0
+12:7/0 = 0
+13:7/0 = 0
+0:8/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+3:8/0 = 0
+4:8/0 = 0
+5:8/0 = 0
+6:8/0 = 0
+7:8/0 = 0
+11:8/0 = 0
+12:8/0 = 0
+13:8/0 = 0
+0:9/0 = 0
+1:9/0 = 0
+2:9/0 = 0
+3:9/0 = 0
+6:9/0 = 0
+7:9/0 = 0
+11:9/0 = 0
+12:9/0 = 0
+13:9/0 = 0
+0:10/0 = 0
+1:10/0 = 0
+2:10/0 = 0
+3:10/0 = 0
+6:10/0 = 0
+7:10/0 = 0
+8:10/0 = 0
+9:10/0 = 0
+10:10/0 = 0
+11:10/0 = 0
+12:10/0 = 0
+13:10/0 = 0
+0:11/0 = 0
+1:11/0 = 0
+2:11/0 = 0
+3:11/0 = 0
+4:11/0 = 0
+5:11/0 = 0
+6:11/0 = 0
+7:11/0 = 0
+8:11/0 = 0
+9:11/0 = 0
+10:11/0 = 0
+11:11/0 = 0
+12:11/0 = 0
+13:11/0 = 0
+0:12/0 = 0
+1:12/0 = 0
+2:12/0 = 0
+3:12/0 = 0
+4:12/0 = 0
+5:12/0 = 0
+6:12/0 = 0
+7:12/0 = 0
+8:12/0 = 0
+9:12/0 = 0
+10:12/0 = 0
+11:12/0 = 0
+13:12/0 = 0
+0:13/0 = 0
+1:13/0 = 0
+2:13/0 = 0
+3:13/0 = 0
+4:13/0 = 0
+5:13/0 = 0
+6:13/0 = 0
+7:13/0 = 0
+8:13/0 = 0
+9:13/0 = 0
+10:13/0 = 0
+0:14/0 = 0
+1:14/0 = 0
+2:14/0 = 0
+3:14/0 = 0
+11:14/0 = 0
+13:14/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_tx3ma"]
+sources/0 = SubResource("TileSetAtlasSource_edxvn")
 
 [sub_resource type="Curve2D" id="Curve2D_7jj1j"]
 _data = {
@@ -22,27 +188,11 @@ point_count = 5
 y_sort_enabled = true
 script = ExtResource("1_qqaft")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1028874442]
-layer = -30
-
-[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=2036787593]
-offset_left = -5.0
-offset_top = 1.0
-offset_right = 1925.0
-offset_bottom = 1085.0
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=929823830]
+tile_set = SubResource("TileSet_tx3ma")
 
 [node name="Player" parent="." unique_id=1438756895 instance=ExtResource("1_y3pti")]
 position = Vector2(955, 535)
-
-[node name="TreeSpawn" type="Path2D" parent="Player" unique_id=734827394]
-position = Vector2(-819.3475, -400.54028)
-scale = Vector2(0.86371374, 0.7748169)
-curve = SubResource("Curve2D_qqaft")
-
-[node name="TreeSpawnFollow" type="PathFollow2D" parent="Player/TreeSpawn" unique_id=1199628533]
-unique_name_in_owner = true
-position = Vector2(2140, 1280)
-rotation = -1.58561
 
 [node name="Path2D" type="Path2D" parent="Player" unique_id=1043875460]
 position = Vector2(-955, -535)
@@ -52,48 +202,6 @@ curve = SubResource("Curve2D_7jj1j")
 unique_name_in_owner = true
 position = Vector2(-110, -77)
 rotation = 0.0018570081
-
-[node name="Mob" parent="." unique_id=1574020910 instance=ExtResource("2_l26od")]
-position = Vector2(591, 344)
-
-[node name="Mob2" parent="." unique_id=1218192418 instance=ExtResource("2_l26od")]
-position = Vector2(1386, 392)
-
-[node name="Mob3" parent="." unique_id=225788758 instance=ExtResource("2_l26od")]
-position = Vector2(444, 824)
-
-[node name="Mob4" parent="." unique_id=422558429 instance=ExtResource("2_l26od")]
-position = Vector2(1356, 806)
-
-[node name="PineTree" parent="." unique_id=253760446 instance=ExtResource("2_y3pti")]
-position = Vector2(335, 251)
-
-[node name="PineTree2" parent="." unique_id=861517770 instance=ExtResource("2_y3pti")]
-position = Vector2(204, 750)
-
-[node name="PineTree3" parent="." unique_id=326221400 instance=ExtResource("2_y3pti")]
-position = Vector2(430, 540)
-
-[node name="PineTree4" parent="." unique_id=945912514 instance=ExtResource("2_y3pti")]
-position = Vector2(125, 398)
-
-[node name="PineTree5" parent="." unique_id=117227146 instance=ExtResource("2_y3pti")]
-position = Vector2(814, 109)
-
-[node name="PineTree6" parent="." unique_id=734557148 instance=ExtResource("2_y3pti")]
-position = Vector2(1507, 225)
-
-[node name="PineTree7" parent="." unique_id=1278471139 instance=ExtResource("2_y3pti")]
-position = Vector2(1181, 267)
-
-[node name="PineTree8" parent="." unique_id=986142011 instance=ExtResource("2_y3pti")]
-position = Vector2(766, 787)
-
-[node name="PineTree9" parent="." unique_id=804553811 instance=ExtResource("2_y3pti")]
-position = Vector2(1118, 677)
-
-[node name="PineTree10" parent="." unique_id=2056733498 instance=ExtResource("2_y3pti")]
-position = Vector2(1528, 698)
 
 [node name="Timer" type="Timer" parent="." unique_id=881508527]
 wait_time = 0.3
