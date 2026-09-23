@@ -19,7 +19,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(-10.6303, -27.3998)]
+"values": [Vector2(-10.63, -86)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -43,7 +43,7 @@ tracks/2/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(9.20459, -29.9444)]
+"values": [Vector2(9.205, -86)]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
@@ -67,7 +67,7 @@ tracks/4/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(-1.73067, -36.6061)]
+"values": [Vector2(-1.731, 97)]
 }
 tracks/5/type = "value"
 tracks/5/imported = false
@@ -119,7 +119,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(-10.6303, -27.3998)]
+"values": [Vector2(-10.63, -86)]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -143,7 +143,7 @@ tracks/2/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(9.20459, -29.9444)]
+"values": [Vector2(9.205, -86)]
 }
 tracks/3/type = "value"
 tracks/3/imported = false
@@ -167,7 +167,7 @@ tracks/4/keys = {
 "times": PackedFloat32Array(0, 0.4, 0.8),
 "transitions": PackedFloat32Array(0.466516, 0.189465, 1),
 "update": 0,
-"values": [Vector2(-1.73067, -36.6061), Vector2(-1.731, -32), Vector2(-1.731, -38)]
+"values": [Vector2(-1.731, 97), Vector2(-1.731, 98), Vector2(-1.731, 99)]
 }
 tracks/5/type = "value"
 tracks/5/imported = false
@@ -179,7 +179,7 @@ tracks/5/keys = {
 "times": PackedFloat32Array(0, 0.4),
 "transitions": PackedFloat32Array(2.46229, 0.535887),
 "update": 0,
-"values": [-0.0250386, 0.0698132]
+"values": [-0.017453292519943295, 0.03490658503988659]
 }
 tracks/6/type = "value"
 tracks/6/imported = false
@@ -233,7 +233,7 @@ tracks/1/keys = {
 "times": PackedFloat32Array(0, 0.3, 0.466666),
 "transitions": PackedFloat32Array(1, 0.5, 2),
 "update": 0,
-"values": [0.4009, 0.4009, 0.24434609527920614]
+"values": [0.4009, 0.4009, 0.24434609527920617]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -281,7 +281,7 @@ tracks/5/keys = {
 "times": PackedFloat32Array(0, 0.166667, 0.3, 0.466667),
 "transitions": PackedFloat32Array(0.392292, 1.31951, 0.267943, 1.8025),
 "update": 0,
-"values": [-0.017453292519943295, -0.03490658503988659, 0.017453292519943295, 0.03490658503988659]
+"values": [-0.01745329251994329, -0.03490658503988659, 0.01745329251994329, 0.03490658503988659]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_wrcpu"]
@@ -311,7 +311,7 @@ metadata/_edit_lock_ = true
 
 [node name="SquareUpperLegL" type="Sprite2D" parent="Colorizer" unique_id=1796249940]
 texture_filter = 1
-position = Vector2(-10.6303, -27.3998)
+position = Vector2(-10.63, -86)
 rotation = 0.4009
 scale = Vector2(6.2, 6.212)
 texture = ExtResource("3_v1xj4")
@@ -320,7 +320,7 @@ flip_h = true
 
 [node name="SquareUpperLegR" type="Sprite2D" parent="Colorizer" unique_id=7165740]
 texture_filter = 1
-position = Vector2(9.20459, -29.9444)
+position = Vector2(9.205, -86)
 rotation = -0.213676
 scale = Vector2(6.2, 6.2)
 texture = ExtResource("4_2wjx3")
@@ -329,7 +329,7 @@ flip_h = true
 
 [node name="SquareBody" type="Sprite2D" parent="Colorizer" unique_id=1884494351]
 texture_filter = 1
-position = Vector2(-1.73067, -36.6061)
+position = Vector2(-1.731, 97)
 rotation = -0.0250386
 scale = Vector2(6.2585135, 6.2970676)
 texture = ExtResource("5_l3moq")
