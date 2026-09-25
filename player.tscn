@@ -75,6 +75,10 @@ show_percentage = false
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=456498881]
 zoom = Vector2(4.5, 4.5)
+limit_left = -2300
+limit_top = -1513
+limit_right = 3917
+limit_bottom = 2365
 
 [node name="PlayerDamage" type="AudioStreamPlayer" parent="." unique_id=1518877891]
 stream = ExtResource("4_hqtel")
