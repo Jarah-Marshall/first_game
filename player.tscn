@@ -26,6 +26,7 @@ corner_radius_bottom_right = 8
 corner_radius_bottom_left = 8
 
 [node name="Player" type="CharacterBody2D" unique_id=1438756895]
+collision_mask = 17
 script = ExtResource("1_onrkg")
 
 [node name="HappyBoo" parent="." unique_id=1091727253 instance=ExtResource("1_4flbx")]
@@ -73,6 +74,7 @@ value = 100.0
 show_percentage = false
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=456498881]
+zoom = Vector2(4.5, 4.5)
 
 [node name="PlayerDamage" type="AudioStreamPlayer" parent="." unique_id=1518877891]
 stream = ExtResource("4_hqtel")

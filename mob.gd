@@ -18,7 +18,7 @@ func set_health(max_health: int):
 
 func _physics_process(delta):
 	var direction = global_position.direction_to(player.global_position)
-	velocity = direction * 300.0
+	velocity = direction * 225.0
 	move_and_slide()
 	
 func take_damage(amount: int):

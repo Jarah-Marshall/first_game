@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://dr7qh71ei62kx" path="res://pistol/bullet_missle.png" id="2_80cqr"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_tx3ma"]
-radius = 39.0
+radius = 43.000004
 
 [node name="Missle" type="Area2D" unique_id=2140616886]
 top_level = true
@@ -14,14 +14,13 @@ script = ExtResource("1_80cqr")
 
 [node name="MuzzleFlash" type="Sprite2D" parent="." unique_id=1242895216]
 texture_filter = 1
-position = Vector2(12.999998, 10.000004)
+position = Vector2(6, 5)
 rotation = 3.1375213
-scale = Vector2(12.589958, 12.589958)
+scale = Vector2(5.5, 5.5)
 texture = ExtResource("2_80cqr")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=451787494]
 top_level = true
-position = Vector2(0, -2)
 rotation = -3.140601
 shape = SubResource("CircleShape2D_tx3ma")
 

@@ -28,11 +28,11 @@ flip_h = true
 
 [node name="ShootingPoint" type="Marker2D" parent="WeaponPivot/Pistol" unique_id=573321738]
 unique_name_in_owner = true
-position = Vector2(25, -11)
+position = Vector2(2.1298332, -0.61620617)
 
 [node name="MissleSP" type="Marker2D" parent="WeaponPivot/Pistol" unique_id=1352200628]
 unique_name_in_owner = true
-position = Vector2(24.963219, -11.08324)
+position = Vector2(2.1298332, -0.61620617)
 
 [node name="Timer" type="Timer" parent="." unique_id=598793103]
 wait_time = 0.3

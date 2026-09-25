@@ -14,7 +14,7 @@ var enemies_to_next_level = 5
 func _physics_process(delta):
 	var direction = Input.get_vector("move_left", "move_right",
 	"move_up", "move_down")
-	velocity = direction * 600
+	velocity = direction * 475
 	move_and_slide()
 	
 	if velocity.length() > 0.0:
@@ -29,7 +29,6 @@ func _physics_process(delta):
 			
 			health -= mob.damage * delta
 			%ProgressBar.value = health
-			player_damage.play()
 		
 		if health <= 0.0:
 			health_depleted.emit()
@@ -46,8 +45,9 @@ func level_up():
 	level += 1
 	enemies_to_next_level += 15
 	
-	health += 5.0
-	damage += 2
+	health += 15.0
+	%ProgressBar.value = health
+	damage += .75
 
 	$LevelUp.visible = true;
 	await get_tree().create_timer(1.0).timeout

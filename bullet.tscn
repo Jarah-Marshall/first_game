@@ -4,7 +4,6 @@
 [ext_resource type="Texture2D" uid="uid://ccsrh6r444pe4" path="res://pistol/pixel_bullet.png" id="2_v8qja"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_tx3ma"]
-radius = 18.0
 
 [node name="Bullet" type="Area2D" unique_id=1419890285]
 top_level = true
@@ -15,8 +14,8 @@ script = ExtResource("1_v8qja")
 
 [node name="Projectile" type="Sprite2D" parent="." unique_id=327181440]
 texture_filter = 1
-position = Vector2(8.027548, -9.9779)
-scale = Vector2(10.002094, 10.002094)
+position = Vector2(4.011016, -3.9889536)
+scale = Vector2(4, 4)
 texture = ExtResource("2_v8qja")
 flip_h = true
 

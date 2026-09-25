@@ -35,6 +35,7 @@ func spawn_mob():
 		var max_health = 3 + (wave * 2.5)
 		new_mob.set_health(max_health)
 	
+	new_mob.scale = Vector2(.25,.25)
 	%PathFollow2D.progress_ratio = randf()
 	new_mob.global_position = %PathFollow2D.global_position
 	add_child(new_mob)
@@ -47,7 +48,7 @@ func spawn_boss_slime():
 	boss.mob_died.connect(check_wave_status)
 	
 	boss.set_health(50 + (wave * 3))
-	boss.scale = Vector2(5.0,5.0)
+	boss.scale = Vector2(2.5,2.5)
 	
 	%PathFollow2D.progress_ratio = randf()
 	boss.global_position = %PathFollow2D.global_position
