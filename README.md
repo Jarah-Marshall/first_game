@@ -31,3 +31,6 @@ Resources:
 	increasing per round and a boss spawning every 5 rounds, the boss does more damage and starts at 50
 	health with a tacked on wave * 3 additional health. Tweaks need to be made to the wave system and
 	boss system as it has some odd bugs, I will keep working at it
+
+	Homework 4 - Adding Juice:
+	Evie - Replaced player, enemy, gun, and bullet/missile assets with ones made myself. Tweaked the animations as well. (~6 hours)
