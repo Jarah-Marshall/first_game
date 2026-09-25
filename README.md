@@ -1,11 +1,14 @@
 Resources:
 	Tutorial Video: https://www.youtube.com/watch?v=GwCiGixlqiU
 	
-	Audio Tutorial video: https://www.youtube.com/watch?v=N3p-7iJWRBY
+	Audio Tutorial video: https://www.youtube.com/watch?v=N3p-7iJWRBY?
+	
+	Tilemap Tutorial video: https://www.youtube.com/watch?v=ZutpG0_CYrQ&t=2106s
 	
 	Assets Used:
 		GDQuest Game Assets: https://www.gdquest.com/library/first_2d_game_godot4_vampire_survivor/
 		Godot Royalty Free Sound Effects: https://store.godotengine.org/asset/ovani-sound/sound-fx-starter-pack-vol/
+		Itch.io Desert Tilemap: https://beyonderboy.itch.io/desert-map-tileset-16x16
 	
 	Tutorial took me roughly 2 hours and 30 minutes to complete
 	
@@ -34,3 +37,6 @@ Resources:
 
 	Homework 4 - Adding Juice:
 	Evie - Replaced player, enemy, gun, and bullet/missile assets with ones made myself. Tweaked the animations as well. (~6 hours)
+	Jarah - Created the Tilemap by using Terrain presets and physics layers to make the game have a similar feel to its original
+	implentation, I also adjusted the scale of all the preexisiting assets(slimes, player, etc.) to match the sizing of the map, this
+	took about 6 hours due to bugs and learning how to do it properly.
