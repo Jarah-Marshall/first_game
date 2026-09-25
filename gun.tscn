@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://du5i8r7jdycua"]
 
 [ext_resource type="Script" uid="uid://bpyfw0mh6bsnv" path="res://gun.gd" id="1_dk5gl"]
-[ext_resource type="Texture2D" uid="uid://coon1w77o334i" path="res://pistol/pistol.png" id="1_vk1bi"]
+[ext_resource type="Texture2D" uid="uid://bds622fnuphit" path="res://pistol/cowboy_pistol.png" id="2_kw0bs"]
 [ext_resource type="AudioStream" uid="uid://bidvi0omsyao5" path="res://Attack.wav" id="3_kw0bs"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_tx3ma"]
@@ -19,9 +19,12 @@ shape = SubResource("CircleShape2D_tx3ma")
 rotation = -0.030518435
 
 [node name="Pistol" type="Sprite2D" parent="WeaponPivot" unique_id=273952554]
+texture_filter = 1
 position = Vector2(86.234566, -6.3716307)
 rotation = 0.033850435
-texture = ExtResource("1_vk1bi")
+scale = Vector2(6.567, 6.567)
+texture = ExtResource("2_kw0bs")
+flip_h = true
 
 [node name="ShootingPoint" type="Marker2D" parent="WeaponPivot/Pistol" unique_id=573321738]
 unique_name_in_owner = true
