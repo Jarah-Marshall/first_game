@@ -40,3 +40,10 @@ Resources:
 	Jarah - Created the Tilemap by using Terrain presets and physics layers to make the game have a similar feel to its original
 	implentation, I also adjusted the scale of all the preexisiting assets(slimes, player, etc.) to match the sizing of the map, this
 	took about 6 hours due to bugs and learning how to do it properly.
+	
+	Homework 5:
+		
+	I attempted to add animations but had realized that I was unable to as my tileset didn't have to proper sequence of tiles to do so - 2.5 hrs
+	Added more terrain and pathways to the map to make it more detailed, also added corresponding physics layers to prevent player from
+	having access to strange places. I also temporarily removed the collision masks for tumbleweeds so they are able to roam freely around the map
+	- 2.5 hours.
