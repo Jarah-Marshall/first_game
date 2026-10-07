@@ -11,7 +11,7 @@ var mobs = 0
 func start_next_wave():
 	mobs = 0
 	if wave % 5 == 0:
-		%WaveLabel.text = "BOSS WAVE! "
+		%WaveLabel.text = tr("BOSS WAVE!")
 		%CurrentWave.visible = true
 		await get_tree().create_timer(3.0).timeout
 		
@@ -80,7 +80,7 @@ func check_wave_status():
 	
 		wave +=1 
 		
-		%WaveLabel.text = "Wave " + str(wave) + " Starting Soon..."
+		%WaveLabel.text = tr("Wave  %d Starting Soon...") % wave
 		%CurrentWave.visible = true
 		await get_tree().create_timer(3.0).timeout
 		%CurrentWave.visible = false

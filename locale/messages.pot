@@ -1,0 +1,97 @@
+# LANGUAGE translation for Your First 2D Game With Godot 4: START (GDQuest) for the following files:
+# res://gun.gd
+# res://main_menu.gd
+# res://main_menu.tscn
+# res://missle.gd
+# res://mob.gd
+# res://pause_menu.gd
+# res://pause_menu.tscn
+# res://player.gd
+# res://player.tscn
+# res://settings.gd
+# res://settings.tscn
+# res://survivors_game.gd
+# res://survivors_game.tscn
+#
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Your First 2D Game With Godot 4: START (GDQuest)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8-bit\n"
+
+#: main_menu.tscn
+msgid "Quit\n"
+msgstr ""
+
+#: main_menu.tscn
+msgid "Settings\n"
+msgstr ""
+
+#: main_menu.tscn
+msgid "Start Game"
+msgstr ""
+
+#: main_menu.tscn
+msgid "This town ain't big enough..."
+msgstr ""
+
+#: main_menu.tscn
+msgid ""
+"Tumbleweed \n"
+"Trouble"
+msgstr ""
+
+#: pause_menu.tscn
+msgid "Paused"
+msgstr ""
+
+#: pause_menu.tscn
+msgid "Resume"
+msgstr ""
+
+#: pause_menu.tscn
+msgid "Settings Menu"
+msgstr ""
+
+#: pause_menu.tscn
+msgid "Main Menu"
+msgstr ""
+
+#: player.tscn
+msgid "Level Up!"
+msgstr ""
+
+#: settings.tscn
+msgid "Volume"
+msgstr ""
+
+#: settings.tscn
+msgid "Close"
+msgstr ""
+
+#: settings.tscn
+msgid "Settings"
+msgstr ""
+
+#: survivors_game.gd:14
+msgid "BOSS WAVE!"
+msgstr ""
+
+#: survivors_game.gd:83
+msgid "Wave  %d Starting Soon..."
+msgstr ""
+
+#: survivors_game.tscn
+msgid "GAME OVER"
+msgstr ""
+
+#: survivors_game.tscn
+msgid "Wave 1 Begin!"
+msgstr ""
+
+msgid "Your First 2D Game With Godot 4: START (GDQuest)"
+msgstr ""

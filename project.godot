@@ -129,6 +129,11 @@ pause={
 ]
 }
 
+[internationalization]
+
+locale/translations=PackedStringArray("res://locale/es.po")
+locale/translations_pot_files=PackedStringArray("res://gun.gd", "res://main_menu.gd", "res://main_menu.tscn", "res://missle.gd", "res://mob.gd", "res://pause_menu.gd", "res://pause_menu.tscn", "res://player.gd", "res://player.tscn", "res://settings.gd", "res://settings.tscn", "res://survivors_game.gd", "res://survivors_game.tscn")
+
 [layer_names]
 
 3d_physics/layer_2="player"
