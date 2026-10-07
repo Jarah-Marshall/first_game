@@ -5,10 +5,15 @@ Resources:
 	
 	Tilemap Tutorial video: https://www.youtube.com/watch?v=ZutpG0_CYrQ&t=2106s
 	
+	Localization Tutorial video: https://docs.godotengine.org/en/stable/tutorials/i18n/localization_using_gettext.html#doc-localization-using-gettext
+	
 	Assets Used:
 		GDQuest Game Assets: https://www.gdquest.com/library/first_2d_game_godot4_vampire_survivor/
 		Godot Royalty Free Sound Effects: https://store.godotengine.org/asset/ovani-sound/sound-fx-starter-pack-vol/
 		Itch.io Desert Tilemap: https://beyonderboy.itch.io/desert-map-tileset-16x16
+	
+	Image of Wireframe from Homework 6:
+![Wireframe Screenshot](res://images/Wireframe.png)
 	
 	Tutorial took me roughly 2 hours and 30 minutes to complete
 	
@@ -54,3 +59,10 @@ Resources:
 	pause menu + ui theme - 2 hrs  (https://intergenic.itch.io/godot-theme-soft-retro)
 	main menu - 2 hrs
 	settings menu - 1 hr
+	
+	Jarah -
+	Planning - 1 Hour
+	Wireframe Development - 45 minutes
+	Localization Implementation - 2 Hours
+	If the image link doesn't work, the wireframe screenshot is in the images folder and is named
+	Wirefram.png
