@@ -47,3 +47,10 @@ Resources:
 	Added more terrain and pathways to the map to make it more detailed, also added corresponding physics layers to prevent player from
 	having access to strange places. I also temporarily removed the collision masks for tumbleweeds so they are able to roam freely around the map
 	- 2.5 hours.
+
+	Homework 6 - Menu Development:
+	Thomas:
+	planning - 1 hr
+	pause menu + ui theme - 2 hrs  (https://intergenic.itch.io/godot-theme-soft-retro)
+	main menu - 2 hrs
+	settings menu - 1 hr
